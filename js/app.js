@@ -4,14 +4,32 @@
         //Build an array with the items listed below in it. Then create a function (using regular function syntax) that will select a 
         //specified number of exercises (number will be passed into the function) and prints the random exercises to the console. 
         //It is ok if an exercise appears more than once in the output.
+
+const myArray = ['Push-ups', 'Sit-ups', 'Bear Crawls', '1 mile run', '60 second plank', 'Burpees', 'Jumping Jacks', 'Squats', 'Weighted Squats', 'Inch Worms'];                
+
+function selectRandomExercises(numberOfExercises) {            
+    for (let i = 0; i < numberOfExercises; i++) {
+        console.log(myArray[Math.floor(Math.random() * myArray.length)]);
+    }            
+}
+
+selectRandomExercises(3);
+
    // B. Once #A is complete, create a function with the same functionality as #1, but this time using an arrow function.
 
     //Array items: Push-ups, Sit-ups, Bear Crawls, 1 mile run, 60 second plank, Burpees, Jumping Jacks, Squats, Weighted Squats, Inch Worms
 
 //Write your code below this line:
 
+const myArray2 = ['Push-ups', 'Sit-ups', 'Bear Crawls', '1 mile run', '60 second plank', 'Burpees', 'Jumping Jacks', 'Squats', 'Weighted Squats', 'Inch Worms'];                
 
+const selectRandomExercises2 = numberOfExercises => {            
+    for (let i = 0; i < numberOfExercises; i++) {
+        console.log(myArray[Math.floor(Math.random() * myArray.length)]);
+    }            
+}
 
+selectRandomExercises2(5);
 
 
 // 2. GenBuzz 
